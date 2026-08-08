@@ -47,7 +47,7 @@
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
 }
 
 .nav-links {
@@ -74,6 +74,139 @@
   color: var(--text-primary);
   background: var(--bg-card-subtle);
   border: 1px solid var(--border-color);
+}
+
+.nav-auth-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ─── Mobile Header Actions & Hamburger ──────────────── */
+
+.mobile-header-actions {
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-hamburger-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  font-size: 1.2rem;
+  transition: background var(--transition-fast);
+}
+
+.mobile-hamburger-btn:hover {
+  background: var(--bg-card-subtle);
+}
+
+.mobile-logout-text {
+  display: none;
+}
+
+.mobile-theme-btn {
+  display: none;
+}
+
+.desktop-theme-btn {
+  display: inline-flex;
+}
+
+/* ─── Mobile Responsive Navbar ───────────────────────── */
+
+@media (max-width: 640px) {
+  .mobile-header-actions {
+    display: flex;
+  }
+
+  .mobile-hamburger-btn {
+    display: flex;
+  }
+
+  .mobile-theme-btn {
+    display: flex;
+  }
+
+  .desktop-theme-btn {
+    display: none !important;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .nav-right.mobile-menu-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    padding: 16px 20px 20px;
+    gap: 16px;
+    box-shadow: var(--shadow-xl);
+    animation: slideDown var(--transition-fast) ease;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .nav-link {
+    padding: 10px 14px;
+    font-size: 0.9375rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav-auth-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .user-nav-badge {
+    justify-content: space-between;
+    padding: 8px 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mobile-logout-text {
+    display: inline;
+    margin-left: 4px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+  }
+
+  .auth-nav-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .auth-nav-buttons .btn-primary {
+    text-align: center;
+    justify-content: center;
+    padding: 10px !important;
+    font-size: 0.875rem !important;
+  }
 }
 
 /* ─── Theme Toggle Button ─────────────────────────────── */
