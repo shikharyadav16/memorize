@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://memo-rize.onrender.com/api';
 
 export default function AdminPage() {
   const { user, token, adminLogin } = useAuth();

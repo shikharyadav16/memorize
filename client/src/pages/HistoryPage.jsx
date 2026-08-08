@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://memo-rize.onrender.com/api';
 
 export default function HistoryPage() {
   const { user, token } = useAuth();
