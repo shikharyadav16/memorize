@@ -422,6 +422,10 @@
   box-shadow: var(--shadow-lg);
   padding: 36px 32px;
   animation: fadeIn var(--transition-base) ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .passage-text {
@@ -429,6 +433,10 @@
   line-height: 1.8;
   color: var(--text-primary);
   letter-spacing: -0.005em;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 /* ─── Writing Area ────────────────────────────────────── */

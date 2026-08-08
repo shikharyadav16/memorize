@@ -9,7 +9,11 @@ export default function PassageDisplay({ text, onTimerComplete }) {
         icon="ph-eye"
         onComplete={onTimerComplete}
       />
-      <div className="passage-card">
+      <div
+        className="passage-card"
+        onContextMenu={(e) => e.preventDefault()}
+        onCopy={(e) => e.preventDefault()}
+      >
         <p className="passage-text">{text}</p>
       </div>
     </div>
