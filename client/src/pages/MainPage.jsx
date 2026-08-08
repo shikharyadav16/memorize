@@ -9,7 +9,7 @@ const API_BASE = 'http://localhost:5000/api';
 
 export default function MainPage() {
   const navigate = useNavigate();
-  const { token } = useAuth();
+  const { user, token } = useAuth();
   // Flow states: 'IDLE' | 'READING' | 'WRITING' | 'EVALUATING'
   const [gameState, setGameState] = useState('IDLE');
   const [passage, setPassage] = useState(null);
@@ -17,6 +17,11 @@ export default function MainPage() {
   const [error, setError] = useState('');
 
   const startPractice = async () => {
+    if (!user || !token) {
+      navigate('/login');
+      return;
+    }
+
     setLoading(true);
     setError('');
     try {
