@@ -31,20 +31,23 @@ Evaluate these four aspects:
 2. Meaning and concepts remembered
 3. Completeness
 4. Accuracy
+5. The words like verbs and nouns in the sentence.
 
 Scoring:
 
 10 - Almost all important information is remembered correctly.
-9 - Nearly all important information is remembered, with only minor omissions.
-8 - Most important information is remembered, with some smaller details missing.
-7 - The main idea and most important details are remembered, but several secondary details are missing.
-6 - The main idea is remembered, but a noticeable amount of information is missing.
-5 - Some important information is remembered, but several major details are missing.
-4 - A limited portion of the important information is remembered.
-3 - Only a small amount of relevant information is remembered.
-2 - Only isolated or vague details are remembered.
+9 - 100% information is remembered, with only minor omissions.
+8 - 90% information is remembered, with some smaller details missing.
+7 - 90% details are remembered, but several secondary details are missing.
+6 - 70% of information is remembered, but a noticeable amount of information is missing.
+5 - 50% information is remembered, but several major details are missing.
+4 - 40% limited portion of the important information is remembered.
+3 - 30% of relevant information is remembered.
+2 - 10% isolated or vague details are remembered.
 1 - Almost no relevant information is remembered.
 0 - No meaningful information from the passage is remembered.
+
+IMPORTANT NOTE: MAKE THE CHECKING VERY STRICT .
 
 IMPORTANT RULES:
 

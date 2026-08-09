@@ -4,7 +4,7 @@ export default function PassageDisplay({ text, onTimerComplete }) {
   return (
     <div className="game-container">
       <Timer
-        duration={25}
+        duration={30}
         label="Memorize Passage"
         icon="ph-eye"
         onComplete={onTimerComplete}
